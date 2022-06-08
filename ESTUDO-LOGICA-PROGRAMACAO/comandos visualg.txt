@@ -1,0 +1,126 @@
+comandos
+
+escreva ("qualquer coisa")
+escreval ("qualquer coisa") - pula linha
+leia
+
+SE	ENTAO
+FIMSE
+
+
+
+ESCOLHA
+	CASO
+FIMESCOLHA
+
+
+ENQUANTO	FACA
+FIMENQUANTO
+
+
+REPITA (INFORMAÇÃO)	ATE (MAIS INFORMAÇÃO)  FACA
+ATÉ
+
+
+PARA 
+FIMPARA
+
+E; OU
+
+
+
+-----------------------------------------------------------------
+var
+	identificador: tipo
+				
+
+		regras sobre identificadores
+			- deve cemeçar com uma letra
+			- os proximos podem ser letras ou numeros
+			- não pode utilizar nenhum simbolo =, exceto _ (underline)
+			- não pode conter espaços em brancos
+			- não pode conter letras com acentos
+			- não pode ser uma palavra reservada ex: (algoritmo, var, inicio, escreva, escreval, fimalgoritmo)
+
+		tipos primitivos
+			- inteiro - ex: 1	3	-5	198	0
+			- real	- ex: 0.5	5.0	9.8	-77.3	3.1415
+			- caractere - ex: "lucas"	"algoritimo"	"123"
+			- logico - ex: verdadeiro	 falso
+
+
+
+
+## operadores aritmeticos 
+
+(+) (a + b) adição
+(-) (a - b) subtração
+(*) (a * b) multiplicação
+(/) (a / b) divisão 
+(\) (a \ b) divisão inteira
+(^) (a ^ b) exponenciação
+(%) (a % b) módulo
+
+# ordem de precedencia 
+
+1 - ARITIMETICOS
+2 - RELACIONAIS (DA ESQUERDA PRA DIREITA)
+3 - LOGICOS
+	
+		ARITIMETICOS
+	parenteses
+	exponenciação
+	multiplicação e divisão
+	adição e subtração
+		
+		LOGICOS
+	"E"
+	"OU"
+	"NÃO"
+
+
+#funções aritmeticas
+
+abs - valor absoluto
+exp - exponenciação
+int - valor inteiro
+raiq - raiz quadrada 
+pi - retornar valor de pi
+sen - seno (rad)
+cos - cosseno (rad)
+tan - tangente (rad)
+graurad - graus para rad
+
+#operadores relacionais (sempre vão resultar em valores logicos)
+
+(>) maior que
+(<) menor que 
+(>=) maior ou igual a 
+(<=) menor ou igual a 
+(=) igual a 
+(<>) diferente de 
+
+
+#operadores logicos
+
+p 	q	pEq (OPERADOR LOGICO "E")
+V	V	V
+V	F	F
+F	V	F
+F	F	F
+
+
+p	q 	pOUq (OPERADOR LOGICO "OU")
+V	V	V
+V	F	V
+F	V	V
+F	F	F
+
+
+p	NÃOp	(OPERADOR LOGICO "NÃO")
+V	F
+F	V
+
+
+
+

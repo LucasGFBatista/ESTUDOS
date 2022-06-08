@@ -1,0 +1,35 @@
+//QD: QUANTIDADE DE DIAS
+//DAB: KM IDA
+//DBA: KM VOLTA
+//DT: DAB + DBA
+//VGKM: VALOR POR KM
+//VGTD: VALOR TOTAL DA GASOLINA EM DIAS ( VGTD <- DT * VGKM)
+//VGM: VALOR DA GASOLINA EM MÊS (VGM <- VGTD * QD)
+
+
+algoritmo "calculoGasolina"
+
+var
+   QD: INTEIRO
+   DAB, DBA, DT, VGKM, VGTD, VGM: REAL
+
+inicio
+   ESCREVA("QUANTOS KM IDA? ")
+   LEIA(DAB)
+   ESCREVA ("QUANTOS KM VOLTA? ")
+   LEIA(DBA)
+   
+   DT <- DAB + DBA
+
+   ESCREVAL("DISTÂNCIA POR DIA É: ", DT,"KM")
+   ESCREVA("QUANTOS DIAS? ")
+   LEIA(QD)
+   ESCREVA("QUAL O VALOR POR KM? R$")
+   LEIA(VGKM)
+   
+   VGM <- DT * VGKM * QD
+
+
+   ESCREVA("EM ", QD, " DIAS IRA GASTAR: R$",VGM:5:2)
+
+fimalgoritmo
